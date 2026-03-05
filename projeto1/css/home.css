@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif; /* Estilo mais próximo do Figma */
+    background-image: url("../img/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden; /* Evita barras de rolagem desnecessárias */
+}
+
+/* ================= MENU ================= */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Gap ajustado para não espalhar demais */
+    padding-top: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b2e83;
+    font-size: 24px;
+    font-style: italic;
+    background-color: rgba(230, 223, 255, 0.8); /* Leve transparência */
+    padding: 10px 45px;
+    border-radius: 5px; /* Menos arredondado para parecer o Figma */
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a:hover {
+    background-color: #d4c7ff;
+    transform: translateY(-3px);
+}
+
+/* ================= CONTEÚDO ================= */
+.conteudo {
+    position: relative;
+    height: calc(100vh - 120px);
+    width: 100%;
+}
+
+/* CAIXA DO TEXTO (Simulando a nuvem do Figma) */
+.texto {
+    position: absolute;
+    left: 40px;
+    top: 25%;
+    max-width: 400px;
+    z-index: 2;
+}
+
+.texto h1 {
+    margin: 0;
+    color: #4b2e83;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* AETHER (No Centro) */
+.aether {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.2));
+}
+
+/* PAIMON (Canto inferior direito) */
+.paimon {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 350px;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 1024px) {
+    nav { gap: 20px; }
+    .texto h1 { font-size: 30px; }
+    .paimon { width: 250px; }
+    .aether { width: 180px; }
+}
+
+@media (max-width: 768px) {
+    body { overflow-y: auto; }
+    nav { flex-direction: column; align-items: center; }
+    .texto { position: static; padding: 40px; text-align: center; margin: 0 auto; }
+    .aether { position: relative; left: 50%; top: 0; transform: translateX(-50%); margin-bottom: 50px;}
+    .paimon { width: 200px; }
+}
