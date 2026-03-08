@@ -1,6 +1,6 @@
 /* Estilos Base */
 body {
-    background-color: #fdf5e6; /* Creme suave */
+    background-color: #fdf5e6; 
     font-family: 'Times New Roman', Times, serif;
     color: #4e342e;
     margin: 0;
@@ -43,7 +43,7 @@ body {
 .main-label {
     font-size: 1.8rem;
     font-style: italic;
-    background-color: #f3e5ab; /* Amarelo Liyue */
+    background-color: #f3e5ab; 
     padding: 8px 30px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -83,7 +83,7 @@ body {
     padding-left: 20px;
 }
 
-/* --- RODAPÉ COM BOTÃO --- */
+/* --- RODAPÉ --- */
 .footer {
     text-align: center;
     margin-top: 60px;
@@ -99,7 +99,7 @@ body {
 .btn-back {
     display: inline-block;
     text-decoration: none;
-    background-color: #8d6e63; /* Marrom Liyue */
+    background-color: #8d6e63; 
     color: white;
     padding: 10px 35px;
     border-radius: 25px;
@@ -115,4 +115,5 @@ body {
 
 @media (max-width: 850px) {
     .header-grid { flex-direction: column; align-items: center; }
+
 }
