@@ -13,7 +13,7 @@ body {
     padding: 20px;
 }
 
-/* --- TOPO CENTRALIZADO --- */
+/* --- TOPO  --- */
 .header-grid {
     display: flex;
     justify-content: space-between;
@@ -70,14 +70,14 @@ body {
 .column { flex: 1; min-width: 320px; }
 .ingredient-list li, .step-list li { margin-bottom: 10px; line-height: 1.6; }
 
-/* --- RODAPÉ: VENTI + BOTÃO VOLTAR --- */
+/* --- RODAPÉ--- */
 .footer {
     text-align: center;
     margin-top: 60px;
     display: flex;
-    flex-direction: column; /* Coloca um embaixo do outro */
-    align-items: center;    /* Centraliza horizontalmente */
-    gap: 15px;              /* Espaço entre a imagem e o botão */
+    flex-direction: column;
+    align-items: center;   
+    gap: 15px;              
     padding-bottom: 40px;
 }
 
@@ -90,23 +90,24 @@ body {
 .btn-back {
     display: inline-block;
     text-decoration: none;
-    background-color: #2d6a4f; /* Fundo verde escuro */
-    color: white;              /* Texto branco */
-    padding: 10px 30px;        /* Espaçamento interno */
-    border-radius: 25px;       /* Borda arredondada (estilo pílula) */
+    background-color: #2d6a4f;
+    color: white;             
+    padding: 10px 30px;       
+    border-radius: 25px;     
     font-weight: bold;
     font-style: italic;
-    transition: 0.3s ease;     /* Suaviza o efeito ao passar o mouse */
+    transition: 0.3s ease;    
     border: 2px solid transparent;
 }
 
 .btn-back:hover {
-    background-color: #1e3a2f; /* Escurece no hover */
-    transform: scale(1.05);    /* Aumenta levemente */
+    background-color: #1e3a2f;
+    transform: scale(1.05);   
     box-shadow: 0 4px 8px rgba(44, 88, 61, 0.1);
 }
 
 /* Responsividade */
 @media (max-width: 850px) {
     .header-grid { flex-direction: column; align-items: center; }
+
 }
