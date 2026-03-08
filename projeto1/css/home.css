@@ -10,19 +10,19 @@ body {
     overflow: hidden;
 }
 
-/* ================= MENU ATUALIZADO ================= */
+/* ================= MENU  ================= */
 nav {
     display: flex;
     justify-content: center;
-    gap: 25px; /* Reduzi o gap para caber os 5 links em linha */
+    gap: 25px; 
     padding-top: 35px;
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    flex-wrap: wrap; 
 }
 
 nav a {
     text-decoration: none;
     color: #4b2e83;
-    font-size: 20px; /* Reduzi levemente a fonte para harmonia visual */
+    font-size: 20px; 
     font-style: italic;
     background-color: rgba(230, 223, 255, 0.85);
     padding: 10px 30px;
@@ -60,7 +60,6 @@ nav a:hover {
     line-height: 1.2;
 }
 
-/* AETHER CENTRALIZADO CONFORME O FIGMA */
 .aether {
     position: absolute;
     top: 20%;
@@ -70,7 +69,6 @@ nav a:hover {
     filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.1));
 }
 
-/* PAIMON NO CANTO */
 .paimon {
     position: absolute;
     bottom: -10px;
@@ -90,4 +88,5 @@ nav a:hover {
     .texto { position: relative; left: 0; text-align: center; margin: 20px auto; padding: 20px; }
     .aether { position: relative; left: 50%; width: 150px; }
     .paimon { width: 200px; }
+
 }
