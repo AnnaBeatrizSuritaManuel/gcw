@@ -1,8 +1,8 @@
 /* Estilos Base */
 body {
-    background-color: #cfd9fa; /* Azul/Lilás bem claro */
+    background-color: #cfd9fa; 
     font-family: 'Times New Roman', Times, serif;
-    color: #283593; /* Azul marinho suave */
+    color: #283593;
     margin: 0;
     padding: 10px;
 }
@@ -43,7 +43,7 @@ body {
 .main-label {
     font-size: 1.8rem;
     font-style: italic;
-    background-color: #bbc4fc; /* Lilás Fontaine */
+    background-color: #bbc4fc; 
     padding: 8px 30px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -78,7 +78,7 @@ body {
     margin-bottom: 12px;
 }
 
-/* --- RODAPÉ COM BOTÃO --- */
+/* --- RODAPÉ --- */
 .footer {
     text-align: center;
     margin-top: 60px;
@@ -94,7 +94,7 @@ body {
 .btn-back {
     display: inline-block;
     text-decoration: none;
-    background-color: #3f51b5; /* Azul real */
+    background-color: #3f51b5; 
     color: white;
     padding: 10px 35px;
     border-radius: 25px;
@@ -110,4 +110,5 @@ body {
 
 @media (max-width: 850px) {
     .header-grid { flex-direction: column; align-items: center; }
+
 }
